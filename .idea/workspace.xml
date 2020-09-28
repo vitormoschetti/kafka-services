@@ -10,6 +10,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -31,8 +32,69 @@
     <property name="GoToNamespace.includeLibraries" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.ecommerce" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.ecommerce" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NewOrderMain">
+    <configuration name="EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.EmailService" />
+      <module name="kafka-services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FraudDetectorService 2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
+      <module name="kafka-services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FraudDetectorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
+      <module name="kafka-services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.LogService" />
+      <module name="kafka-services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NewOrderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.NewOrderMain" />
       <module name="kafka-services" />
@@ -65,9 +127,19 @@
       <setting name="fixLineNumbers" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.FraudDetectorService 2" />
+      <item itemvalue="Application.EmailService" />
+      <item itemvalue="Application.FraudDetectorService" />
+      <item itemvalue="Application.LogService" />
+      <item itemvalue="Application.NewOrderMain" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.NewOrderMain" />
+        <item itemvalue="Application.FraudDetectorService" />
+        <item itemvalue="Application.EmailService" />
+        <item itemvalue="Application.LogService" />
       </list>
     </recent_temporary>
   </component>
@@ -79,29 +151,44 @@
       <option name="presentableId" value="Default" />
       <updated>1600078437840</updated>
       <workItem from="1600078441533" duration="1556000" />
+      <workItem from="1600682011185" duration="3653000" />
+      <workItem from="1600855026561" duration="3816000" />
+      <workItem from="1600982838235" duration="5040000" />
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1285" height="297" key="GridCell.Tab.0.bottom" timestamp="1600080606012">
+    <state x="158" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600855837987">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1285" height="297" key="GridCell.Tab.0.bottom/35.27.1331.741@35.27.1331.741" timestamp="1600080606012" />
-    <state width="1285" height="297" key="GridCell.Tab.0.center" timestamp="1600080606011">
+    <state x="158" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/35.27.1331.741@35.27.1331.741" timestamp="1600855837987" />
+    <state x="508" y="109" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1600985062594">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1285" height="297" key="GridCell.Tab.0.center/35.27.1331.741@35.27.1331.741" timestamp="1600080606011" />
-    <state width="1285" height="297" key="GridCell.Tab.0.left" timestamp="1600080606011">
+    <state x="508" y="109" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/35.27.1331.741@35.27.1331.741" timestamp="1600985062594" />
+    <state width="1285" height="297" key="GridCell.Tab.0.bottom" timestamp="1600990557896">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1285" height="297" key="GridCell.Tab.0.left/35.27.1331.741@35.27.1331.741" timestamp="1600080606011" />
-    <state width="1285" height="297" key="GridCell.Tab.0.right" timestamp="1600080606012">
+    <state width="1285" height="297" key="GridCell.Tab.0.bottom/35.27.1331.741@35.27.1331.741" timestamp="1600990557896" />
+    <state width="1285" height="297" key="GridCell.Tab.0.center" timestamp="1600990557892">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1285" height="297" key="GridCell.Tab.0.right/35.27.1331.741@35.27.1331.741" timestamp="1600080606012" />
-    <state x="344" y="89" width="816" height="678" key="search.everywhere.popup" timestamp="1600080298144">
+    <state width="1285" height="297" key="GridCell.Tab.0.center/35.27.1331.741@35.27.1331.741" timestamp="1600990557892" />
+    <state width="1285" height="297" key="GridCell.Tab.0.left" timestamp="1600990557891">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state x="344" y="89" width="816" height="678" key="search.everywhere.popup/35.27.1331.741@35.27.1331.741" timestamp="1600080298144" />
+    <state width="1285" height="297" key="GridCell.Tab.0.left/35.27.1331.741@35.27.1331.741" timestamp="1600990557891" />
+    <state width="1285" height="297" key="GridCell.Tab.0.right" timestamp="1600990557893">
+      <screen x="35" y="27" width="1331" height="741" />
+    </state>
+    <state width="1285" height="297" key="GridCell.Tab.0.right/35.27.1331.741@35.27.1331.741" timestamp="1600990557893" />
+    <state x="354" y="27" width="683" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600985102550">
+      <screen x="35" y="27" width="1331" height="741" />
+    </state>
+    <state x="354" y="27" width="683" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/35.27.1331.741@35.27.1331.741" timestamp="1600985102550" />
+    <state x="344" y="89" width="816" height="678" key="search.everywhere.popup" timestamp="1600684886962">
+      <screen x="35" y="27" width="1331" height="741" />
+    </state>
+    <state x="344" y="89" width="816" height="678" key="search.everywhere.popup/35.27.1331.741@35.27.1331.741" timestamp="1600684886962" />
   </component>
 </project>
