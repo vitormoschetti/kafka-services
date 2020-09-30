@@ -2,12 +2,14 @@ package br.com.ecommerce;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
+import java.util.Map;
+
 public class FraudDetectorService {
 
     public static void main(String[] args) {
         final var fraudDetectorService = new FraudDetectorService();
         final var kafkaService =
-                new KafkaService<Order>(FraudDetectorService.class.getSimpleName(), "ECOMMERCE_NEW_ORDER", fraudDetectorService::parse, Order.class);
+                new KafkaService<Order>(FraudDetectorService.class.getSimpleName(), "ECOMMERCE_NEW_ORDER", fraudDetectorService::parse, Order.class, Map.of());
         kafkaService.run();
     }
 
