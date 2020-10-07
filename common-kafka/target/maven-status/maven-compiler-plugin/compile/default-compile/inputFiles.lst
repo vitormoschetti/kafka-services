@@ -1,0 +1,5 @@
+/home/mrrobot/Documentos/github/services-kafka/common-kafka/src/main/java/br/com/ecommerce/GsonDeserializer.java
+/home/mrrobot/Documentos/github/services-kafka/common-kafka/src/main/java/br/com/ecommerce/GsonSerializer.java
+/home/mrrobot/Documentos/github/services-kafka/common-kafka/src/main/java/br/com/ecommerce/KafkaDispatcher.java
+/home/mrrobot/Documentos/github/services-kafka/common-kafka/src/main/java/br/com/ecommerce/ConsumerFunction.java
+/home/mrrobot/Documentos/github/services-kafka/common-kafka/src/main/java/br/com/ecommerce/KafkaService.java

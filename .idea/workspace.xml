@@ -7,6 +7,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -32,9 +46,13 @@
     <property name="GoToNamespace.includeLibraries" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/service-users/src/main/java/br/com/ecommerce" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.ecommerce" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.ecommerce" />
     </key>
@@ -42,10 +60,28 @@
       <recent name="br.com.ecommerce" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package" />
+    </option>
+  </component>
   <component name="RunManager" selected="Application.NewOrderMain">
+    <configuration name="CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.CreateUserService" />
+      <module name="service-users" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.EmailService" />
-      <module name="kafka-services" />
+      <module name="service-email" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -58,7 +94,7 @@
     </configuration>
     <configuration name="FraudDetectorService 2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
-      <module name="kafka-services" />
+      <module name="service-fraudDetector" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -71,7 +107,7 @@
     </configuration>
     <configuration name="FraudDetectorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
-      <module name="kafka-services" />
+      <module name="service-fraudDetector" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -84,7 +120,7 @@
     </configuration>
     <configuration name="LogService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.LogService" />
-      <module name="kafka-services" />
+      <module name="service-log" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -97,7 +133,7 @@
     </configuration>
     <configuration name="NewOrderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.NewOrderMain" />
-      <module name="kafka-services" />
+      <module name="service-new-order" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -133,13 +169,15 @@
       <item itemvalue="Application.FraudDetectorService" />
       <item itemvalue="Application.LogService" />
       <item itemvalue="Application.NewOrderMain" />
+      <item itemvalue="Application.CreateUserService" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.NewOrderMain" />
+        <item itemvalue="Application.CreateUserService" />
+        <item itemvalue="Application.FraudDetectorService" />
         <item itemvalue="Application.LogService" />
         <item itemvalue="Application.EmailService" />
-        <item itemvalue="Application.FraudDetectorService" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +193,10 @@
       <workItem from="1600855026561" duration="3816000" />
       <workItem from="1600982838235" duration="5040000" />
       <workItem from="1601285034822" duration="4572000" />
-      <workItem from="1601501221652" duration="752000" />
+      <workItem from="1601501221652" duration="5104000" />
+      <workItem from="1601829265413" duration="592000" />
+      <workItem from="1601895495023" duration="1256000" />
+      <workItem from="1602066041187" duration="2314000" />
     </task>
     <servers />
   </component>
@@ -164,37 +205,53 @@
       <screen x="35" y="27" width="1331" height="741" />
     </state>
     <state x="158" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/35.27.1331.741@35.27.1331.741" timestamp="1600855837987" />
-    <state x="508" y="109" width="544" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1601501939074">
+    <state x="508" y="109" width="544" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1602068129574">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state x="508" y="109" width="544" height="575" key="#com.intellij.ide.util.MemberChooser/35.27.1331.741@35.27.1331.741" timestamp="1601501939074" />
-    <state width="1285" height="297" key="GridCell.Tab.0.bottom" timestamp="1601502012177">
+    <state x="508" y="109" width="544" height="575" key="#com.intellij.ide.util.MemberChooser/35.27.1331.741@35.27.1331.741" timestamp="1602068129574" />
+    <state x="453" y="257" width="696" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601503066218">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1285" height="297" key="GridCell.Tab.0.bottom/35.27.1331.741@35.27.1331.741" timestamp="1601502012177" />
-    <state width="1285" height="297" key="GridCell.Tab.0.center" timestamp="1601502012177">
+    <state x="453" y="257" width="696" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/35.27.1331.741@35.27.1331.741" timestamp="1601503066218" />
+    <state width="1285" height="297" key="GridCell.Tab.0.bottom" timestamp="1602068397398">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1285" height="297" key="GridCell.Tab.0.center/35.27.1331.741@35.27.1331.741" timestamp="1601502012177" />
-    <state width="1285" height="297" key="GridCell.Tab.0.left" timestamp="1601502012177">
+    <state width="1285" height="297" key="GridCell.Tab.0.bottom/35.27.1331.741@35.27.1331.741" timestamp="1602068397398" />
+    <state width="1285" height="297" key="GridCell.Tab.0.center" timestamp="1602068397398">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1285" height="297" key="GridCell.Tab.0.left/35.27.1331.741@35.27.1331.741" timestamp="1601502012177" />
-    <state width="1285" height="297" key="GridCell.Tab.0.right" timestamp="1601502012177">
+    <state width="1285" height="297" key="GridCell.Tab.0.center/35.27.1331.741@35.27.1331.741" timestamp="1602068397398" />
+    <state width="1285" height="297" key="GridCell.Tab.0.left" timestamp="1602068397394">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1285" height="297" key="GridCell.Tab.0.right/35.27.1331.741@35.27.1331.741" timestamp="1601502012177" />
+    <state width="1285" height="297" key="GridCell.Tab.0.left/35.27.1331.741@35.27.1331.741" timestamp="1602068397394" />
+    <state width="1285" height="297" key="GridCell.Tab.0.right" timestamp="1602068397398">
+      <screen x="35" y="27" width="1331" height="741" />
+    </state>
+    <state width="1285" height="297" key="GridCell.Tab.0.right/35.27.1331.741@35.27.1331.741" timestamp="1602068397398" />
+    <state x="472" y="182" width="446" height="440" key="chooseDestDirectoryDialog" timestamp="1602067303009">
+      <screen x="35" y="27" width="1331" height="741" />
+    </state>
+    <state x="472" y="182" width="446" height="440" key="chooseDestDirectoryDialog/35.27.1331.741@35.27.1331.741" timestamp="1602067303009" />
     <state x="354" y="27" width="683" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600985102550">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
     <state x="354" y="27" width="683" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/35.27.1331.741@35.27.1331.741" timestamp="1600985102550" />
+    <state x="35" y="42" width="1321" height="707" key="new project wizard" timestamp="1602066989893">
+      <screen x="35" y="27" width="1331" height="741" />
+    </state>
+    <state x="35" y="42" width="1321" height="707" key="new project wizard/35.27.1331.741@35.27.1331.741" timestamp="1602066989893" />
     <state x="445" y="27" width="500" height="741" key="refactoring.ChangeSignatureDialog" timestamp="1601288609989">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
     <state x="445" y="27" width="500" height="741" key="refactoring.ChangeSignatureDialog/35.27.1331.741@35.27.1331.741" timestamp="1601288609989" />
-    <state x="344" y="89" width="816" height="678" key="search.everywhere.popup" timestamp="1601290113455">
+    <state x="364" y="175" width="672" height="677" key="run.anything.popup" timestamp="1601510144927">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state x="344" y="89" width="816" height="678" key="search.everywhere.popup/35.27.1331.741@35.27.1331.741" timestamp="1601290113455" />
+    <state x="364" y="175" width="672" height="677" key="run.anything.popup/35.27.1331.741@35.27.1331.741" timestamp="1601510144927" />
+    <state x="344" y="89" width="816" height="678" key="search.everywhere.popup" timestamp="1602068357513">
+      <screen x="35" y="27" width="1331" height="741" />
+    </state>
+    <state x="344" y="89" width="816" height="678" key="search.everywhere.popup/35.27.1331.741@35.27.1331.741" timestamp="1602068357513" />
   </component>
 </project>
