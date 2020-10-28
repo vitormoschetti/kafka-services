@@ -10,7 +10,7 @@ public class EmailService {
 
         final EmailService emailService = new EmailService();
 
-        final var kafkaService = new KafkaService(EmailService.class.getSimpleName(), "ECOMMERCE_SEND_EMAIL", emailService::parse, Email.class, Map.of());
+        final var kafkaService = new KafkaService<>(EmailService.class.getSimpleName(), "ECOMMERCE_SEND_EMAIL", emailService::parse, Email.class, Map.of());
         kafkaService.run();
     }
 

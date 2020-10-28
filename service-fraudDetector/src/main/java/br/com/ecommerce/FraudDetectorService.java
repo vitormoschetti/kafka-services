@@ -13,7 +13,7 @@ public class FraudDetectorService {
     public static void main(String[] args) {
         final var fraudDetectorService = new FraudDetectorService();
         final var kafkaService =
-                new KafkaService<Order>(FraudDetectorService.class.getSimpleName(), "ECOMMERCE_NEW_ORDER", fraudDetectorService::parse, Order.class, Map.of());
+                new KafkaService<>(FraudDetectorService.class.getSimpleName(), "ECOMMERCE_NEW_ORDER", fraudDetectorService::parse, Order.class, Map.of());
         kafkaService.run();
     }
 
@@ -35,10 +35,10 @@ public class FraudDetectorService {
 
         if(order.getAmount().compareTo(new BigDecimal("4500")) >=0){
             System.out.println("Order is a fraund!!!" + order);
-            orderDispatcher.send("ECOMMERCE_ORDER_REJECTED", order.getUserId(), order);
+            orderDispatcher.send("ECOMMERCE_ORDER_REJECTED", order.getEmail(), order);
         }else{
             System.out.println("Approved: " + order);
-            orderDispatcher.send("ECOMMERCE_ORDER_APPROVED", order.getUserId(), order);
+            orderDispatcher.send("ECOMMERCE_ORDER_APPROVED", order.getEmail(), order);
         }
 
     }
