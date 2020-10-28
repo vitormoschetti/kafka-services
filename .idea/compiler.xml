@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="service-fraudDetector" />
         <module name="common-kafka" />
+        <module name="service-reading-report" />
         <module name="service-http-ecommerce" />
         <module name="service-log" />
         <module name="service-email" />

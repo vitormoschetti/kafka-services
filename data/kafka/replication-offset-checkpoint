@@ -1,5 +1,5 @@
 0
-37
+43
 __consumer_offsets 22 0
 __consumer_offsets 30 0
 ECOMMERCE_SEND_EMAIL 0 16
@@ -8,6 +8,7 @@ __consumer_offsets 4 0
 ECOMMERCE_NEW_ORDER 0 16
 ECOMMERCE_ORDER_REJECTED 1 2
 __consumer_offsets 46 0
+USER_GENERATE_READING_REPORT 0 36
 ECOMMERCE_ORDER_REJECTED 0 1
 __consumer_offsets 16 0
 __consumer_offsets 28 0
@@ -15,25 +16,30 @@ __consumer_offsets 36 0
 __consumer_offsets 42 0
 ECOMMERCE_ORDER_APPROVED 2 12
 __consumer_offsets 18 0
-ECOMMERCE_SEND_EMAIL 1 12
+ECOMMERCE_SEND_EMAIL 1 14
 __consumer_offsets 24 0
 ECOMMERCE_SEND_EMAIL 2 13
-ECOMMERCE_NEW_ORDER 1 12
+USER_GENERATE_READING_REPORT 2 36
+USER_GENERATE_READING_REPORT 1 48
+ECOMMERCE_NEW_ORDER 1 14
 ECOMMERCE_ORDER_APPROVED 1 10
 __consumer_offsets 38 0
 __consumer_offsets 48 0
 ECOMMERCE_NEW_ORDER 2 13
+SEND_MESSAGE_TO_ALL_USERS 0 4
 __consumer_offsets 2 0
 __consumer_offsets 6 0
-__consumer_offsets 14 0
+__consumer_offsets 14 436
 __consumer_offsets 20 0
 __consumer_offsets 0 0
 __consumer_offsets 44 0
 ECOMMERCE_ORDER_REJECTED 2 1
 __consumer_offsets 12 0
+SEND_MESSAGE_TO_ALL_USERS 2 0
 __consumer_offsets 26 0
 __consumer_offsets 34 0
 __consumer_offsets 10 0
 ECOMMERCE_ORDER_APPROVED 0 15
 __consumer_offsets 32 0
 __consumer_offsets 40 0
+SEND_MESSAGE_TO_ALL_USERS 1 0

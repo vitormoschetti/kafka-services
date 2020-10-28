@@ -12,7 +12,7 @@ import java.util.concurrent.ExecutionException;
 public class NewOrderServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException {
         try (final var orderDispatcher = new KafkaDispatcher<Order>();
              final var emailDispatcher = new KafkaDispatcher<Email>();) {
 
